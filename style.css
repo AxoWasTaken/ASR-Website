@@ -1,4 +1,6 @@
-/* General Page Styling */
+/* ============================
+   GLOBAL PAGE STYLING
+   ============================ */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -8,7 +10,70 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* ============================
+   TOP RED BAR
+   ============================ */
+.top-bar {
+    background: #8b0000;
+    height: 12px;
+    width: 100%;
+}
+
+/* ============================
+   DROPDOWN UNDER TOP BAR
+   ============================ */
+.top-dropdown {
+    position: relative;
+    background: #5e0000;
+    padding: 10px 20px;
+}
+
+.top-dropdown-button {
+    background: #5e0000;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 6px 10px;
+}
+
+.top-dropdown-button:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown content (hidden by default) */
+.top-dropdown-content {
+    display: none;
+    position: absolute;
+    background: #7a0000;
+    min-width: 200px;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 20;
+}
+
+.top-dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.top-dropdown-content a:hover {
+    background: #8b0000;
+}
+
+/* Show dropdown on hover */
+.top-dropdown:hover .top-dropdown-content {
+    display: block;
+}
+
+/* ============================
+   HEADER WITH EMBLEM
+   ============================ */
 header {
     background: #8b0000;
     color: white;
@@ -22,7 +87,7 @@ header {
 }
 
 .emblem {
-    width: 150px;
+    width: 120px;
     height: auto;
     margin-left: 10px;
 }
@@ -37,7 +102,9 @@ header h1 {
     opacity: 0.9;
 }
 
-/* Main Content */
+/* ============================
+   MAIN CONTENT
+   ============================ */
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -57,12 +124,31 @@ h2 {
     margin-top: 0;
 }
 
-/* Lists */
+/* ============================
+   RANKING IMAGE
+   ============================ */
+.ranking-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* ============================
+   LISTS
+   ============================ */
 ul {
     margin-left: 20px;
 }
 
-/* Footer */
+ul li {
+    margin-bottom: 6px;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
 footer {
     background: #222;
     color: #ddd;
